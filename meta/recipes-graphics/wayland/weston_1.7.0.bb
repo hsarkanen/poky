@@ -12,8 +12,8 @@ SRC_URI = "http://wayland.freedesktop.org/releases/${BPN}-${PV}.tar.xz \
            file://make-lcms-explicitly-configurable.patch \
            file://make-libwebp-explicitly-configurable.patch \
 "
-SRC_URI[md5sum] = "c60ce9dde99a089db0539d8f6b557827"
-SRC_URI[sha256sum] = "dc3ea5d13bbf025fabc006216c5ddc0d80d5f4ebe778912b8c4d1d4acaaa614d"
+SRC_URI[md5sum] = "1fde8a44f48cd177438522850d6ba4be"
+SRC_URI[sha256sum] = "1c4511945f3f476c24af712e82a7b500ae91a99cbc0fe2e381da1449125166cd"
 
 inherit autotools pkgconfig useradd
 
