@@ -17,7 +17,7 @@ SRC_URI[sha256sum] = "06388ba04ac79aa72d685cc1a8e646ddb2b8cfe11fcc742294f9addac4
 
 inherit autotools pkgconfig useradd
 
-DEPENDS = "libxkbcommon gdk-pixbuf pixman cairo glib-2.0 jpeg"
+DEPENDS = "libxkbcommon gdk-pixbuf pixman cairo glib-2.0 jpeg libinput"
 DEPENDS += "wayland virtual/egl pango"
 
 EXTRA_OECONF = "--enable-setuid-install \
