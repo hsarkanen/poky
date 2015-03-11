@@ -27,7 +27,7 @@ EXTRA_OECONF = "--enable-setuid-install \
                 --enable-demo-clients-install \
                 --disable-libunwind \
                 --disable-rpi-compositor \
-                --disable-rdp-compositor \
+                --enable-rdp-compositor \
                 "
 
 
