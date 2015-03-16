@@ -17,7 +17,7 @@ SRC_URI[sha256sum] = "1c4511945f3f476c24af712e82a7b500ae91a99cbc0fe2e381da144912
 
 inherit autotools pkgconfig useradd
 
-DEPENDS = "libxkbcommon gdk-pixbuf pixman cairo glib-2.0 jpeg libinput"
+DEPENDS = "libxkbcommon gdk-pixbuf pixman cairo glib-2.0 jpeg libinput freerdp"
 DEPENDS += "wayland virtual/egl pango"
 
 EXTRA_OECONF = "--enable-setuid-install \
@@ -28,7 +28,8 @@ EXTRA_OECONF = "--enable-setuid-install \
                 --disable-libunwind \
                 --disable-rpi-compositor \
                 --enable-rdp-compositor \
-                "
+                --enable-screen-sharing \
+"
 
 
 PACKAGECONFIG ??= "${@bb.utils.contains('DISTRO_FEATURES', 'wayland', 'kms fbdev wayland egl', '', d)} \
