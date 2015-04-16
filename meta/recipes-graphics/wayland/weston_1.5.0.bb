@@ -60,6 +60,8 @@ PACKAGECONFIG[cairo-glesv2] = "--with-cairo-glesv2,--with-cairo=image,cairo"
 PACKAGECONFIG[lcms] = "--enable-lcms,--disable-lcms,lcms"
 # Weston with webp support
 PACKAGECONFIG[webp] = "--enable-webp,--disable-webp,libwebp"
+# Weston with libinput backend
+PACKAGECONFIG[libinput] = "--enable-libinput-backend,--disable-libinput-backend,libinput"
 
 do_install_append() {
 	# Weston doesn't need the .la files to load modules, so wipe them
